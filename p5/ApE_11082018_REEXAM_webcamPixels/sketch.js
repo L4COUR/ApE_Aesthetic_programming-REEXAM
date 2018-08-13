@@ -44,9 +44,9 @@ function draw() {
 
       if (bright > threshold) {
         tint(255,bright)
+        console.log('$',x+random(1,1000),'Like');
       } else {
         tint(255,0)
-        console.log('$',x+random(1,1000),'Like');
         //number of likes contributing to the Like economy
       }
       for (var i = 0; i < adverts.length; i++) {
