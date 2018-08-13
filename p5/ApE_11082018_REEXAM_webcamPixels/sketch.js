@@ -72,10 +72,11 @@ function draw() {
 function Advert(x,y) {
   this.x = x;
   this.y = y;
+  this.dim = random(25,50)
 
   this.display = function() {
     stroke(1)
-    rect(this.x,this.y, 40,24);
+    rect(this.x,this.y, this.dim,this.dim);
   }
 
   this.move = function() {
