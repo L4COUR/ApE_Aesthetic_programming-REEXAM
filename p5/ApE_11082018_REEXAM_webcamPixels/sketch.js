@@ -44,11 +44,12 @@ function draw() {
 
       if (bright > threshold) {
         tint(255,bright)
-        console.log('$',x+random(1,1000),'Like');
+        console.log('$',x+bright,'Like');
+        //number of likes contributing to the Like economy
       } else {
         tint(255,0)
-        //number of likes contributing to the Like economy
       }
+
       for (var i = 0; i < adverts.length; i++) {
         adverts[i].display();
         adverts[i].move();
